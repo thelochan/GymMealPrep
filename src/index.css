@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding:0;
+}
+
+body {
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  background-color: rgb(235, 224, 224);
+}
+
+.App{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+section{
+  margin: 2rem 0 1rem 0;
+
+}
+
+.controls{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+}
+
+input{
+  text-align: center;
+  padding: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+button{
+  width: 100%;
+  padding: 0.5rem 1re,;
+  background-color: brown;
+  color:burlywood;
+  border:none;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 1rem;
+}
+
+button:hover{
+  cursor:pointer;
+  background-color: rgb(18, 123, 155);
+}
+
+main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1{
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.nutrients u1 {
+  display: flex;
+  width: 35rem;  
+  justify-content: space-evenly;
+}
+
+ul {
+  list-style: none;
+}
+
+.meals {
+  display: flex;
+}
+
+img {
+  width: 100%;
+  margin-bottom: 1rem;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  margin: 0 1rem;
+  max-width: 300px;
+  box-shadow: 0 4px 8px 2px rgba(75, 75, 77, 0.18);
+}
+
+.instructions {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+
+a{
+  text-decoration: none;
+  background-color: brown;
+  color: darkblue;
+  width: fit-content;
+  padding: 0.5rem 1rem;
+}
+
+a:hover{
+  cursor:pointer;
+  background-color: darkblue;
+}
+
+@media only screen and (max-width: 550px) {
+  .meals{
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .nutrients ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+
+  }
+}
